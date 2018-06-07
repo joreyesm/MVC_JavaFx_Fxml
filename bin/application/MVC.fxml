@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+<?import javafx.scene.layout.GridPane?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.HBox?>
+	
+<GridPane xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="application.MvcController" alignment="center" hgap="10" vgap="10" styleClass="root">
+ <padding><Insets top="25" right="25" bottom="10" left="25" /></padding> 
+ 
+ <Label text="Valor:"     GridPane.columnIndex="0" GridPane.rowIndex="0"  />
+ <TextField fx:id="valor" PrefWidth="20" focusTraversable="false" 
+ 	 GridPane.columnIndex="1" GridPane.rowIndex="0" />                   
+  
+ <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1" GridPane.rowIndex="4">
+       <Button text="Incrementar" onAction="#incrementar" />
+ </HBox>
+ <stylesheets>
+   <URL value="@application.css" />
+ </stylesheets>
+  
+</GridPane>
